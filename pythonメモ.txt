@@ -1,0 +1,256 @@
+>>> 'He is man'
+'He is man'
+>>> 'He\'s man'
+"He's man"
+>>> "He's man"
+"He's man"
+>>> 
+>>> "line1\nline2"
+'line1\nline2'
+>>> print("line1\nline2")
+line1
+line2
+>>> 
+>>> print('c:\dir1\\namefile1')
+c:\dir1\namefile1
+>>> print(r'c:\dir1\namefile1')
+c:\dir1\namefile1
+>>> 
+>>> print('''
+... Usage:
+... -h Help
+... ''')
+
+Usage:
+-h Help
+
+>>> print('''\
+... Usage:
+... -h Help
+... ''')
+Usage:
+-h Help
+
+>>>
+>>> 3 * 'abc'
+'abcabcabc'
+>>> 'Py' 'thon'
+'Python'
+>>> p = 'Py'
+>>> p2 = 'thon'
+>>> p p2
+  File "<stdin>", line 1
+    p p2
+       ^
+SyntaxError: invalid syntax
+>>> p +  p2
+'Python'
+>>> 
+>>> text = ('He\'s a man'
+...  ' in Japan')
+>>> 
+>>> text
+"He's a man in Japan"
+>>> print(text)
+He's a man in Japan
+>>> 
+>>> word = 'Python'
+>>> word[0]
+'P'
+>>> word[5]
+'n'
+>>> word[-1]
+'n'
+>>> word[-6]
+'P'
+>>> 
+>>> word[0:2]
+'Py'
+>>> word[1:5]
+'ytho'
+>>> word[:2]
+'Py'
+>>> word[-3:2]
+''
+>>> word[-1:-5]
+''
+>>> word
+'Python'
+>>> word[44]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> word[-44]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+IndexError: string index out of range
+>>> word[4:30]
+'on'
+>>> word[6:30]
+''
+>>> word[-4:1:]
+''
+>>> word[-4:2]
+''
+>>> word[-4:2]
+''
+>>> word
+'Python'
+>>> word[0] = 'J'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>> word[2:] = 'J'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+>>>  'J' + word[0]
+  File "<stdin>", line 1
+    'J' + word[0]
+    ^
+IndentationError: unexpected indent
+>>>  'J' + word[0:]
+  File "<stdin>", line 1
+    'J' + word[0:]
+    ^
+IndentationError: unexpected indent
+>>> 'J' + word[0]
+'JP'
+>>> 'J' + word[1:]
+'Jython'
+>>> len(word)
+6
+>>> 'J' + word[1:]
+'Jython'
+>>> word[:2] + 'Py'
+'PyPy'
+>>> squares =[1, 4, 9, 16, 25]
+>>> sruares
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'sruares' is not defined
+>>> squares
+[1, 4, 9, 16, 25]
+>>> squares[]
+  File "<stdin>", line 1
+    squares[]
+            ^
+SyntaxError: invalid syntax
+>>> squares[0]
+1
+>>> squares[-1]
+25
+>>> squares[2]
+9
+>>> squares[-1]
+25
+>>> squares[1:2]
+[4]
+>>> squares[0:2]
+[1, 4]
+>>> squares[-3:]
+[9, 16, 25]
+>>> squares[-3:2]
+[]
+>>> squares[-3:5]
+[9, 16, 25]
+>>> squares[-3:43]
+[9, 16, 25]
+>>> squares[-3:4]
+[9, 16]
+>>> squares
+[1, 4, 9, 16, 25]
+>>> squares + [36, 49, 64]
+[1, 4, 9, 16, 25, 36, 49, 64]
+>>> squares
+[1, 4, 9, 16, 25]
+>>> squares + [36, 49, 64]
+[1, 4, 9, 16, 25, 36, 49, 64]
+>>> squares + [36, 49, 64, 81, 100]
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+>>> squares = squares + [36, 49, 64, 81, 100]
+>>> squares
+[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+>>> cube = [1, 8, 27, 65, 125]
+>>> cubes = [1, 8, 27, 65, 125]
+>>> cubes
+[1, 8, 27, 65, 125]
+>>> 4 ** 3
+64
+>>> cubes[3]
+65
+>>> cubes[3] = 64
+>>> cubes
+[1, 8, 27, 64, 125]
+>>> 6 ** 3
+216
+>>> cubes.append(216)
+>>> cubes
+[1, 8, 27, 64, 125, 216]
+>>> cubes.append(7 ** 3)
+>>> cubes
+[1, 8, 27, 64, 125, 216, 343]
+>>> cubes.append("7 ** 3")
+>>> cubes
+[1, 8, 27, 64, 125, 216, 343, '7 ** 3']
+>>> cubes.diappend("7 ** 3")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'diappend'
+>>> cubes.dippend("7 ** 3")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'dippend'
+>>> cubes.dippend("7 ** 3")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'list' object has no attribute 'dippend'
+>>> 
+>>> 
+>>> letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+>>> letters
+['a', 'b', 'c', 'd', 'e', 'f', 'g']
+>>> letters[2:5]
+['c', 'd', 'e']
+>>> letters[2:5]
+['c', 'd', 'e']
+>>> letters[2:5] = ['C', 'D', 'E']
+>>> letters
+['a', 'b', 'C', 'D', 'E', 'f', 'g']
+>>> letters[2:5] = []
+>>> letters
+['a', 'b', 'f', 'g']
+>>> letters[:]
+['a', 'b', 'f', 'g']
+>>> letters[:] = []
+>>> letters
+[]
+>>> len8letters9
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'len8letters9' is not defined
+>>> len(letters)
+0
+>>> letters[2:5] = ['C', 'D', 'E']
+>>> len(letters)
+3
+>>> letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+>>> len(letters)
+7
+>>> letters = ['aaa', 'bbb', 'ccc', 'd', 'e', 'f', 'g']
+>>> len(letters)
+7
+
+ネスト
+>>> a = ['a', 'b', 'c']
+>>> n = [1, 2, 3]
+>>> x = [a, n]
+>>> x 
+[['a', 'b', 'c'], [1, 2, 3]]
+>>> x[0]
+['a', 'b', 'c']
+>>> x[1]
+[1, 2, 3]
+>>> x[0][1]
+'b'
+>>> 
